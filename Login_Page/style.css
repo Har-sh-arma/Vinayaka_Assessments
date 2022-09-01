@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main__frame {
+    display: block;
+    padding: 50px;
+    background-color: peachpuff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub__but {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 25px;
+}
+
+.usrnm,
+.psswd {
+    padding: 4px;
+}
