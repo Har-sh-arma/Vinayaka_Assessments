@@ -1,9 +1,9 @@
 
 function some(){
-	const usr_el = document.getElementById("user");
+	const em_el = document.getElementById("email");
 	const psd_el = document.getElementById("psd");
 	const user = {};
-	user["name"] = usr_el.value;
+	user["email"] = em_el.value;
 	user["psswd"] = psd_el.value;
 	var xhr = new XMLHttpRequest();
 	xhr.open("POST","http://localhost:3000", true);

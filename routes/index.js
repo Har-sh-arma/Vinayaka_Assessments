@@ -1,5 +1,7 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express')
+const router = express.Router()
+var Student = require('C:\\Users\\Harsh\\Practice\\Vinayaka_Assessments\\connections\\connection.js')
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -21,6 +23,8 @@ router.get('/Student', function(req, res, next) {
 
 router.post('/', (req, res) => {
 	console.log(req.body);
+	const student_user = new Student(req.body);
+	student_user.save();
 });        
 
 module.exports = router;
