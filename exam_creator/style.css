@@ -1,0 +1,120 @@
+:root {
+    --high: #ef5a69;
+    --light: #B1B1B1;
+    --dark1: #0A0708;
+    --dark2: #444444;
+    --high2: #a6e63f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark2);
+}
+
+.navbar {
+    height: 80px;
+    /* background-color: #4E1A3D; */
+    background: var(--dark1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 998;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    /* background-color: aqua; */
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.navbar__items {
+    height: 80px;
+    list-style: none;
+}
+
+.navbar__items:hover {
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: all 1s ease;
+}
+
+.navbar__links {
+    color: var(--high);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.navbar__btn {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+#navbar__logo {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    /* color: #4E1A3D; */
+    color: var(--high2);
+    text-decoration: solid;
+    /* text-shadow: 0 0 1px #4E1A3D, 0 0 20px #CFEED1; */
+    font-family: 'Lobster';
+    /* 
+    background:
+      linear-gradient(to right, );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+
+}
+
+.content {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10% 10% 10% 10%;
+}
+
+.addQuest {
+    padding: 8px 25px;
+}
+
+.temptainer {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    margin: 5px 5rem;
+    padding: 7px;
+    border-radius: 10px;
+}
