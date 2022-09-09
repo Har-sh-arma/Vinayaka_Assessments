@@ -2,15 +2,76 @@
 <html>
     <head>
         <title></title>
+        <style>
+            p {
+                color:brown;
+                background-color:green;
+                font-size:larger;
+
+            }
+        </style>
         
     </head>
     <body>
-        <div>
+        <div id="para">
             <form>
                 <label for="userid">name:</label></form></br>
                 <input type="text" name="userid">
                 
             </form>
         </div>
+        <p>apple</p>
+        <p>banana</p>
+        <p>orange</p>
+        <p>kiwi</p>
+        <button onclick="wait()"><a id="strtBtn">click to start</a></button>
+        
+
+
+        <script type="text/javascript">
+           
+        //     // a.style.Color="red";
+        //     // a.style.backgroundColor="yellow";
+        
+           
+        //    dd= document.querySelectorAll("#para");
+        //   const a = document.createElement("p");
+        //   a.id=$sherlock;
+        //     a.innerHTML= "hii" + dd[1].innerHTML + dd[2].innerHTML;
+            
+        //     document.body.appendChild(a);
+       
+       
+        let flag=0;
+       function wait(){
+        const d = new Date();
+        let hour= d.getHours();
+        let minute = d.getMinutes();
+        if(hour>=11 && minute>=47 ){
+           location.replace("exam_page.html");
+        //    console.log("successful");
+            
+        }
+        else{
+            if(flag==0)
+            {const div = document.createElement('div');
+            div.innerHTML="Exam will begin on 23:30";
+            div.style.backgroundColor="yellow";
+            div.style.textAlign="center";
+            document.body.appendChild(div);
+            flag++;
+        }
+        }
+       }
+
+          
+           
+            
+           console.log(hour);
+           console.log(minute);
+           console.log(second);
+          
+         </script>
     </body>
 </html>
+
